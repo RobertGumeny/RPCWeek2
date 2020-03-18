@@ -8,32 +8,42 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
       <header class="container-fluid">
         <div class="row bg-dark">
-          <div class="col-12 text-center">
-            <h1 class="text-color">ROCK, PAPER, SCISSORS</h1>
-            <h6 class="text-right text-color">by Robert Gumeny</h6>
+          <div class="col-12 text-center text-light">
+            <h1>ROCK, PAPER, SCISSORS</h1>
+            <h6 class="text-right">by Robert Gumeny</h6>
           </div>
         </div>
       </header>
       <main class="container">
-        <div class="row mt-5 justify-content-center" id="viewports">
-          <div class="col-4" id="viewport-player">
-            <img src="https://place-hold.it/300" alt="" class="img-fluid mx-auto rounded-circle viewport-border">
-            <div class="row text-center">
-              <div class="btn-group p-1 text-center" role="group" aria-label="Button Group">
-                <button type="button" class="btn btn-primary" onclick="playGame('rock')">Rock</button>
-                <button type="button" class="btn btn-primary" onclick="playGame('paper')">Paper</button>
-                <button type="button" class="btn btn-primary" onclick="playGame('scissors')">Scissors</button>
-              </div>
-            </div>
+        <div class="row mt-5 text-center" id="viewports">
+          <div class="col-12 col-md-4 ml-auto">
+            <h2 class="text-dark">Human Choice</h2>
+            <span>
+              <i id="viewport-player" class="far fa-square fa-7x viewport-bg"></i>
+              <p id="viewport-player-text"></p>
+            </span>
           </div>
-          <div class="col-4" id="viewport-computer">
-            <img src="https://place-hold.it/300" alt="" class="img-fluid rounded-circle viewport-border">
+          <div class="col-12 col-md-4 mr-auto">
+            <h2 class="text-dark">Computer Choice</h2>
+            <span>
+              <i id="viewport-computer" class="far fa-square fa-7x viewport-bg"></i>
+              <p id="viewport-computer-text"></p>
+            </span>
           </div>
+        </div><!-- End Row 1-->
+        <div class="row justify-content-center">
+           <button type="button" class="btn btn-dark m-2" onclick="playGame('rock')">Rock</button>
+           <button type="button" class="btn btn-dark m-2" onclick="playGame('paper')">Paper</button>
+           <button type="button" class="btn btn-dark m-2" onclick="playGame('scissors')">Scissors</button>
+        </div>
+        <div class="row mt-5 justify-content-center">
+          <h1 id="declare-winner"class="winner">Make a selection!</h1>
         </div>
       </main>
     <!-- Optional JavaScript -->

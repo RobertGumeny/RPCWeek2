@@ -1,3 +1,6 @@
+body {
+  background-color: lightgray;
+}
 h1.text-color,h6.text-color{
   color: #6164ff;
 }
@@ -7,4 +10,30 @@ h1.text-color,h6.text-color{
 .center-buttons{
   display:table;
   margin:0 auto;
+}
+.viewport-bg{
+  color: whitesmoke;
+  background: #343a40;
+  padding: 50px;
+  border-radius: 50%;
+}
+.winner{
+  background: #343a40;
+  color: whitesmoke;
+  border: 5px solid #272b30;
+}
+.human-winner{
+  background: #343a40;
+  color: whitesmoke;
+  border: 5px solid #272b30; 
+}
+.computer-winner{
+  background: #343a40;
+  color: whitesmoke;
+  border: 5px solid #272b30;
+}
+.tie-game{
+  background: #343a40;
+  color: whitesmoke;
+  border: 5px solid #272b30;
 }
