@@ -1,3 +1,10 @@
 h1.text-color,h6.text-color{
   color: #6164ff;
 }
+.viewport-border{
+  border: 5px solid #6164ff;
+}
+.center-buttons{
+  display:table;
+  margin:0 auto;
+}

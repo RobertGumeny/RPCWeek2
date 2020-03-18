@@ -19,6 +19,23 @@
           </div>
         </div>
       </header>
+      <main class="container">
+        <div class="row mt-5 justify-content-center" id="viewports">
+          <div class="col-4" id="viewport-player">
+            <img src="https://place-hold.it/300" alt="" class="img-fluid mx-auto rounded-circle viewport-border">
+            <div class="row text-center">
+              <div class="btn-group p-1 text-center" role="group" aria-label="Button Group">
+                <button type="button" class="btn btn-primary" onclick="playGame('rock')">Rock</button>
+                <button type="button" class="btn btn-primary" onclick="playGame('paper')">Paper</button>
+                <button type="button" class="btn btn-primary" onclick="playGame('scissors')">Scissors</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-4" id="viewport-computer">
+            <img src="https://place-hold.it/300" alt="" class="img-fluid rounded-circle viewport-border">
+          </div>
+        </div>
+      </main>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
