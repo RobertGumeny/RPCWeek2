@@ -4,6 +4,9 @@ let displays = [
   {paper: ""},
   {scissors: ""} 
 ]
+let wins = 0
+let losses = 0
+let draws = 0
 
 // NOTE 
 // Main game, receive human choice and run it against randomly generate computer choice to determine a winner
@@ -69,20 +72,26 @@ function computerChoice(){
 // NOTE 
 // Run this function if the Human player wins
 function humanWins(){
+  wins++
   document.getElementById("declare-winner").innerText = "You win!!!"
   document.getElementById("declare-winner").className = "human-winner"
+  document.getElementById("wins").innerText = wins.toString()
 }
 // NOTE 
 // Run this function if the Computer wins
 function humanLoses(){
+  losses++
   document.getElementById("declare-winner").innerText = "The Computer wins..."
   document.getElementById("declare-winner").className = "computer-winner"
+  document.getElementById("losses").innerText = losses.toString()
 }
 // NOTE 
 // Run this function if it is a tie
 function tieGame(){
+  draws++
   document.getElementById("declare-winner").innerText = "It's a draw"
   document.getElementById("declare-winner").className = "tie-game"
+  document.getElementById("draws").innerText = draws.toString()
 }
 // NOTE
 // Change Computer Viewport when Rock is selected
